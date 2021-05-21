@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="header-text">
+    <h1>HappMobi's Rent </h1>
+  </div>
+  <form class="content" [formGroup]="frmUserData" (ngSubmit)="entranceSubmit()">
+
+    <div class="input-container" *ngIf="!this.isSigning">
+      <i class="material-icons user-icon">email</i>
+      <input formControlName="email" class="input" type="text" placeholder="Digite seu email..." />
+    </div>
+
+    <div class="input-container">
+      <i class="material-icons user-icon">person</i>
+      <input formControlName="username"  type="text" placeholder="Digite seu usuário..." />
+    </div>
+
+    <div class="input-container">
+      <i class="material-icons password-icon">lock</i>
+      <input  formControlName="password" type="password" placeholder="Digite sua senha..." />
+    </div>
+
+    <a (click)="switchEntranceOption()" class="switch-question">{{entranceOption}}</a>
+    <p class="error-message">{{errorMessage}}</p>
+    <button class="button" type="submit">Entrar</button>
+  </form>
+</div>

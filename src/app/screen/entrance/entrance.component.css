@@ -1,0 +1,75 @@
+.container {
+  background-color:#D44561;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-text {
+  margin-bottom: 100px;
+  font-family: Arial;
+  color: white;
+  font-size: 25px;
+}
+
+.input-container {
+  background-color: white;
+  width: 15%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+
+.input-container input {
+  width: 100%;
+  outline: none;
+  border: 0;
+  border-radius: 100px;
+  padding-left: 10px;
+}
+
+.input-container i {
+  color: #D44561;
+  margin-left: 10px;
+}
+
+.switch-question{
+  color: white;
+  font-weight: bold;
+  cursor:pointer;
+  text-space: 20px;
+}
+
+.button {
+  font-size: 30px;
+  color: #D44561;
+  font-weight: bold;
+  border: 0;
+  background-color: white;
+  height: 70px;
+  width: 18%;
+  margin-top: 60px;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+}
+
+.error-message{
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}

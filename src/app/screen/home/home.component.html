@@ -1,0 +1,63 @@
+<div class="container">
+  <button type="button" class="logout-button" (click)="logout()">
+    <i class="material-icons">logout</i>
+  </button>
+  <div class="list-vehicles">
+    <div class="list-options">
+
+      <a (click)="switchListView(true)"
+         [ngStyle]="{
+      'background-color': (isShowingRentedList)? '#D44561': 'white',
+      'color': (isShowingRentedList)? 'white': '#D44561'} ">
+        Veículos para alugar</a>
+
+      <a (click)="switchListView(false)"
+         [ngStyle]="{
+      'background-color': (!isShowingRentedList)? '#D44561': 'white',
+      'color': (!isShowingRentedList)? 'white': '#D44561'} ">Veículos alugados</a>
+    </div>
+
+    <div class="content" *ngIf="isShowingRentedList; else rentedList">
+      <div class="to-rent-container" *ngFor="let rented of rentedVehicles">
+        <div class="to-rent-main-content">
+          <div class="to-rent-text">
+            <span class="model-text">{{rented.model}}</span>
+            <span class="information-text">{{rented.color}} - R${{rented.price}}</span>
+          </div>
+
+          <button type="button" class="add-button" (click)="rentVehicle(rented)"><i class="material-icons">add</i>
+          </button>
+        </div>
+      </div>
+      <span *ngIf="rentedVehicles.length == 0" class="empty-message">{{emptyMessage}}</span>
+    </div>
+
+    <ng-template #rentedList>
+      <div class="rented-container" *ngFor="let me of meVehicles">
+        <div class="rented-content">
+
+          <div class="still-rented-checkbox"
+               [ngStyle]="{'background-color': (me.still_rented)? 'white': '#D44561'}">
+            <input type="checkbox"/>
+          </div>
+
+
+          <div class="rented-text">
+            <span class="rented-date">{{me.rented_date | date: 'dd/MM - hh:mm'}} </span>
+            <span class="rented-model-text">{{me.model}}</span>
+            <span class="rented-information-text">{{me.color}} - R${{me.price}}</span>
+          </div>
+
+
+          <button type="button" class="quit-button" (click)="quitVehicle(me)">
+            <i class="material-icons">close</i>
+          </button>
+
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  <div class="warning-message"><a>{{warningMessage}}</a></div>
+</div>
+
+
