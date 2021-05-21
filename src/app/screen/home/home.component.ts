@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   isShowingRentedList: any
   warningMessage: any;
   emptyMessage: any;
+  userName: any;
 
   constructor(
     private vehicleSvc: VehicleService,
@@ -38,6 +39,8 @@ export class HomeComponent implements OnInit {
       await this.router.navigateByUrl('/login')
     } else {
       this.userId = localStorage.getItem("userId");
+      this.userName = localStorage.getItem("username");
+      this.userName = this.userName[0].toUpperCase() + this.userName.substr(1);
       isLogged = true;
     }
 

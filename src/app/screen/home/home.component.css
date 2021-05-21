@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: Arial;
 
 }
 
@@ -12,6 +13,17 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+}
+
+.user-informaton{
+  font-size: 16px;
+  color: #D44561;
+  margin-top: 15px;
 }
 
 .empty-message {
@@ -43,7 +55,6 @@
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   font-weight: bold;
-  font-family: Arial;
   font-size: 16px;
 }
 
@@ -93,12 +104,10 @@
 
 .model-text {
   color: #D44561;
-  font-family: Arial;
   font-size: 25px;
   margin-bottom: 5px;
 }
 .information-text {
-  font-family: Arial;
   color: #D44561;
   font-weight: bold;
   font-size: 16px;
@@ -191,14 +200,12 @@ button {
 
 .rented-date{
   color: white;
-  font-family: Arial;
   font-size: 12px;
   margin-bottom: 5px;
 }
 
 .rented-model-text{
   color:white;
-  font-family: Arial;
   font-size: 25px;
   margin-bottom: 5px;
   font-weight: bold;
@@ -206,7 +213,6 @@ button {
 
 .rented-information-text{
   color: white;
-  font-family: Arial;
   font-size: 16px;
   margin-bottom: 5px;
 }
