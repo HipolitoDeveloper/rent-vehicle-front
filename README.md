@@ -1,27 +1,43 @@
-# FrontendHappmobi
+# Aluguel de Veículos
+Essa é o front do Alugle de Veículos, os dados requisitados por essa aplicação são fornecidos pela [API](https://github.com/HipolitoDeveloper/rent-vehicle-api) que fornece dados para o front do Aluguel de Veículos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+# Avisos
 
-## Development server
+- É necessário rodar a API para aproveitar 100% da experiência da aplicação
+- Caso você tenha iniciado a API em uma porta diferente de 7000, mude essa informação no arquivo src/app/config/uriConfig
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Páginas
+- Login
+- Home (Onde pode ser feito o aluguel de carros)
 
-## Code scaffolding
+## Tecnologias
+- Angular CLI 12.0
+## Inicialização da Aplicação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Dê o clone do projeto através do comando
+```
+git clone https://github.com/HipolitoDeveloper/rent-vehicle-front
+```
 
-## Build
+Após isso, instale as dependências com
+```
+npm i
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Por fim inicialize a aplicação com
+```
+ng serve
+```
 
-## Running unit tests
+## Contatos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Gabriel Hipólito - hipolitodeveloper@gmail.com
 
-## Running end-to-end tests
+LinkedIn: [https://www.linkedin.com/in/gabriel-hipolito-b26ba215a/](https://www.linkedin.com/in/gabriel-hipolito-b26ba215a/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+Link do Projeto API: [Aluguel de Carros - API](https://github.com/HipolitoDeveloper/rent-vehicle-api)
+Link do Projeto FRONT: [Aluguel de Carros - Front](https://github.com/HipolitoDeveloper/rent-vehicle-front)
 
-## Further help
+## Autor
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Gabriel Hipólito
